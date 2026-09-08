@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/laravel-docu-extract-ai",
+    "description": "Extract unstructured layout fields from PDF and image uploads into strongly typed PHP DTOs using Claude & OpenAI.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\DocuMatrix\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\DocuMatrix\\PackageServiceProvider"
+            ]
+        }
+    }
+}
