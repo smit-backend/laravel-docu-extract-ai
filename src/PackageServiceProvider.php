@@ -4,20 +4,17 @@ declare(strict_types=1);
 
 namespace SmitBackend\DocuMatrix;
 
-/**
- * DocuMatrix AI: Document Field Extractor Service Provider
- *
- * @author smit-backend
- */
+use SmitBackend\DocuMatrix\Contracts\ExtractorDriverInterface;
+
 class PackageServiceProvider
 {
     public function register(): void
     {
-        // Register configuration and core bindings
+        // Bind core service singleton
     }
 
     public function boot(): void
     {
-        // Boot service routes, views, or commands
+        // Boot routes and configuration publishing
     }
 }
